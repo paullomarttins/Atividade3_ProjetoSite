@@ -1,0 +1,108 @@
+body {
+  background: #5B2C6F;
+  font-family: sans-serif;
+  font-weight: lighter;
+  color: #E8DAEF;
+  margin: 0 auto;
+  padding: 1.5rem;
+  max-width: 960px;
+  position: relative;
+}
+
+header, figure, footer, #container {
+  text-align: center;
+}
+
+a {
+  color: #76D7C4;
+}
+
+#imagem {
+  width: 100%;
+  max-width: 180px;
+}
+
+.button {
+  border: none;
+  border-radius: 10px;
+  background-color: #F7DC6F;
+  margin: 2rem;
+  padding: 1rem;
+  width: 180px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.button span {
+  cursor: pointer;
+  display: incline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button1 {
+  border: none;
+  border-radius: 10px;
+  background-color: #F1948A;
+  margin: 2rem;
+  padding: 1rem;
+  width: 180px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: incline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 25px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+footer {
+  margin-top: 20rem;
+  line-height: 1.2rem;
+}
+
+footer address {
+  font-size: 0.8rem;
+}
+
+footer small {
+  font-size: 0.8rem;
+}
