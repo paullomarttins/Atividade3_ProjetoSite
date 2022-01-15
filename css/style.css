@@ -5,6 +5,7 @@ body {
   color: #E8DAEF;
   margin: 0 auto;
   padding: 1.5rem;
+  width: auto;
   max-width: 960px;
   position: relative;
 }
@@ -15,6 +16,16 @@ header, figure, footer, #container {
 
 a {
   color: #76D7C4;
+}
+
+#h01 {
+  font-size: 45px;
+  text-shadow: #8954EC 0.1em 0.1em 0.2em
+}
+
+#h02 {
+  font-size: 45px;
+  text-shadow: #8954EC 0.1em 0.1em 0.2em
 }
 
 #imagem {
@@ -105,4 +116,62 @@ footer address {
 
 footer small {
   font-size: 0.8rem;
+}
+
+table {
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background: #FFFFFF;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 80%;
+  box-shadow: 0 0 3px 1px white;
+  color: #28282A;
+}
+
+tr:nth-child(even) {
+  background: #F2F2F6;
+}
+
+th {
+  background: #2C135A;
+  color: white;
+}
+
+.cadastro {
+  width: auto;
+  max-width: 960px;
+  text-align: center;
+}
+
+.mb-1 {
+  position: absolute;
+  text-align: left;
+}
+
+.mb-2 {
+  position: relative;
+  margin: 1.5rem;
+}
+
+
+input[type=text], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 2px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0 3px 1px white;
+}
+
+#mb-1 {
+  font-size: 45px;
+  text-shadow: black 0.1em 0.1em 0.2em
+
+}
+
+#mb-3 {
+  cursor: pointer;
 }

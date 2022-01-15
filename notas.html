@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width; initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
   </head>
   <body>
     <header>
-      <h1>Minhas Notas</h1>
+      <h1 id='mb-1'>Minhas Notas</h1>
       <h3>Crie e visualize abaixo suas tarefas de hoje <p><script> document.write(new Date().toDateString()); </script></p></h3>
     </header>
 
@@ -18,17 +18,60 @@
       <img id="imagem" src="notes.png" alt="Minhas Notas"/>
     </figure> -->
 
+
     <div id="container">
       <p>Preencha os campos abaixo para criar novas tarefas.
       </p>
-      <button class="button" onclick=""><span>Inserir </span></button>
+      <!-- <button class="button" onclick=""><span>Inserir </span></button> -->
       <!-- <button class="button1" onclick="window.location.href='sobre.html'"><span>Sobre Nós </span></button> -->
     </div>
+
+    <form class="cadastro" action="notas.html" method="post">
+      <div class="mb-1">
+        <label class="form-label">Nome da Tarefa</label>
+      </div>
+      <div class="mb-2">
+        <input type="text" class="form-control" name="tarefa" id="tarefa" required autofocus>
+      </div>
+      <div class="mb-1">
+        <label class="form-label">Descrição</label>
+      </div>
+      <div class="mb-2">
+        <input type="text" class="form-control" name="descricao" id="descricao" required>
+      </div>
+      <div class="mb-1">
+        <label class="form-label">Prioridade</label>
+      </div>
+      <div class="mb-2">
+        <select id="prioridade" name="prioridade">
+          <option value="Alta">Alta</option>
+          <option value="Média">Média</option>
+          <option value="Baixa">Baixa</option>
+        </select>
+        <!-- <input type="text" class="form-control" name="prioridade" id="prioridade" required> -->
+      </div>
+      <button class="button" onclick="criaTarefa('tbl')"><span>Nova Tarefa </span></button>
+    </form>
+
+    <table id="tbl">
+      <thead>
+        <tr>
+          <!-- <th>ID</th> -->
+          <th>Nome da Tarefa</th>
+          <th>Descrição</th>
+          <th>Prioridade</th>
+          <th>Data</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
 
     <footer>
       <address>Quer saber mais sobre Software Livre visite <a href="http://wiki.pmartins.dev.br">Wiki Dev</a></address>
       <small>Copyright &copy; Paulo Martins <a href="http://wiki.pmartins.dev.br">Pmartins.Dev</a></small>
     </footer>
   </body>
-  <script src="js/script.js"></script>
+  <!-- <script src="js/script.js"></script> -->
 </html>
